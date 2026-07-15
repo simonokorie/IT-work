@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign in</title>
+<style>
+  body { font-family: Arial, sans-serif; background: skyblue; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+  .login-card { background: #fff; width: 380px; padding: 32px; border-radius: 8px; }
+  h1 { text-align: center; }
+  label { display: block; font-size: 14px; font-weight: 600; margin: 0 0 6px; }
+  .form-group { margin-bottom: 16px; position: relative; }
+  input[type="text"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+  .password-group input { padding-right: 36px; -webkit-text-security: disc; }
+  #toggle { display: none; }
+  #toggle:checked ~ input { -webkit-text-security: none; }
+  .toggle-label { position: absolute; top: 28px; right: 8px; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; border-radius: 6px; cursor: pointer; background: #f0f0f0; }
+  .toggle-label:hover { background: #e2e2e2; }
+  .eye-closed { display: none; }
+  #toggle:checked ~ .toggle-label .eye-open { display: none; }
+  #toggle:checked ~ .toggle-label .eye-closed { display: block; }
+  .forgot { text-align: right; margin-bottom: 20px; font-size: 13px; }
+  button { width: 100%; background: #111; color: #fff; border: none; border-radius: 6px; padding: 12px; font-size: 15px; margin-bottom: 20px; }
+  .divider { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; color: #888; font-size: 13px; }
+  .divider hr { flex: 1; border: none; height: 1px; background: #ddd; }
+  .social-login { display: flex; gap: 10px; margin-bottom: 20px; }
+  .social-login a { flex: 1; text-align: center; padding: 10px; border: 1px solid #ccc; border-radius: 6px; text-decoration: none; color: #333; }
+  .signup-text { text-align: center; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="login-card">
+  <h1>Log In</h1>
+  <form method="POST">
+    <div class="form-group">
+      <label>Email or Username</label>
+      <input type="text" required name="username" />
+    </div>
+    <div class="form-group password-group">
+      <label>Password</label>
+      <input type="text" required name="password" />
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="toggle-label">
+        <svg class="eye-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <svg class="eye-closed" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a20.3 20.3 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 7 11 7a20.3 20.3 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+          <line x1="1" y1="1" x2="23" y2="23"/>
+        </svg>
+      </label>
+    </div>
+    <div class="forgot"><a href="forgot-password.html">Forgot Password?</a></div>
+    <button type="submit">Submit</button>
+    <div class="divider"><hr><span>or</span><hr></div>
+    <div class="social-login">
+      <a href="#">Google</a>
+      <a href="#">Facebook</a>
+    </div>
+    <p class="signup-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </form>
+</div>
+</body>
+</html>
