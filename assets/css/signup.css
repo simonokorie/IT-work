@@ -8,6 +8,8 @@
 
 form{
     display:flex;
+     overflow: auto;
+    height: 100vh;
     flex-direction: column;
     margin: 40px auto;
     width: 100%;
@@ -29,7 +31,7 @@ input, textarea,select,button{
 form button{
     background:#009;
     color: #fff;
-
+   
 }
 .panel{
     width: 100%;
@@ -42,7 +44,7 @@ form button{
 section{
     display:flex;
     gap: 20px;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 label{
