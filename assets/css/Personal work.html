@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vino & Co. Wine Store</title>
+<style>
+  /* ===================================================
+     DONE FOR YOU — header + hero section
+     =================================================== */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  body {
+    background: #faf7f2;
+    color: #2b2b2b;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #3a0d18;
+    color: #fff;
+  }
+
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+  }
+
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  header nav a:hover {
+    color: #d4a373;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(58, 13, 24, 0.75), rgba(58, 13, 24, 0.75)),
+      url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    color: #fff;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 14px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 480px;
+    margin-bottom: 24px;
+    opacity: 0.9;
+  }
+
+  .hero button {
+    padding: 14px 32px;
+    background: #d4a373;
+    color: #3a0d18;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .hero button:hover {
+    background: #c8935e;
+  }
+
+
+  /* ===================================================
+     YOUR TURN — style the products section and footer
+     Some starter selectors are here to get you going.
+     Things to try:
+       - .products should probably be a grid or flex row
+       - .product-card needs padding, border/shadow, spacing
+       - .product-card img should have a fixed height + object-fit
+       - .product-card .price should stand out (color/weight)
+       - footer needs a background color, padding, text alignment
+     =================================================== */
+
+  .products {
+    /* display: ??? */
+    /* try grid-template-columns or flex-wrap here */
+    margin: 20px;
+    border-radius: 30px;
+  }
+
+  .products h2 {
+    /* section heading style */
+  }
+
+  .product-card {
+    /* card background, border, padding, border-radius, shadow */
+  }
+
+  .product-card img {
+    /* width: 100%; height: ???; object-fit: ???; */
+  }
+
+  .product-card h3 {
+    /* wine name styling */
+  }
+
+  .product-card .price {
+    /* make the price stand out */
+  }
+
+  .product-card button {
+    /* "Add to cart" button style — try matching the hero button */
+  }
+
+  footer {
+    /* background, padding, text-align, color */
+    background: rgba(101, 101, 33, 0.452);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Vino & Co.</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Discover Wines Worth Sharing</h1>
+    <p>Hand-picked reds, whites, and sparkling wines delivered straight to your door.</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="products">
+    <h2>Our Best Sellers</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=400&q=80" alt="Red wine bottle">
+        <h3>Château Rouge Reserve</h3>
+        <p class="price">$34.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1566452348683-79a4f4a4b0b5?auto=format&fit=crop&w=400&q=80" alt="White wine bottle">
+        <h3>Golden Valley Chardonnay</h3>
+        <p class="price">$28.50</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=400&q=80" alt="Sparkling wine bottle">
+        <h3>Bella Sera Sparkling Brut</h3>
+        <p class="price">$41.00</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=400&q=80" alt="Rosé wine bottle">
+        <h3>Provence Rosé</h3>
+        <p class="price">$26.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Vino & Co. All rights reserved.</p>
+    <p>Must be 18+ to purchase. Drink responsibly.</p>
+  </footer>
+
+</body>
+</html>
